@@ -2,7 +2,7 @@
 
 let animals = {
 
-    name: "vertebrados",
+    name: "vertebrates",
     number: 210,
     walk: function() {
 
@@ -10,6 +10,11 @@ let animals = {
     },
     run: function() {
         return "too fast";
+    },
+
+    speak: function() {
+
+        return "nowdays," + this.name + " dont speak =P  ";
     }
 
 
@@ -20,3 +25,4 @@ console.log(animals.name);
 console.log(animals.number);
 
 console.log(animals.run());
+console.log(animals.speak());
