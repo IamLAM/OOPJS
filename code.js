@@ -26,3 +26,12 @@ console.log(animals.number);
 
 console.log(animals.run());
 console.log(animals.speak());
+
+//working a constructor
+
+function Dog() {
+
+    this.name = "firulais";
+    this.color = "blue";
+    this.numLegs = 4;
+}
