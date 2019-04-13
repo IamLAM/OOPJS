@@ -70,3 +70,18 @@ for (let property in terrier) {
 }
 
 console.log(ownProps);
+
+
+//working with prototype inside an object
+Animal.prototype = {
+
+    numLegs: 4,
+    eat: function() {
+
+
+    },
+    describe: function() {
+
+
+    }
+};
