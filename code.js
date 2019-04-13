@@ -48,3 +48,14 @@ function Animal(name, color) {
 
 let terrier = new Animal("Firulais", "Dark Brown");
 console.log(terrier instanceof Animal);
+
+//Adding properties to array
+let ownProps = [];
+
+for (let property in terrier) {
+    if (terrier.hasOwnProperty(property)) {
+        ownProps.push(property);
+    }
+}
+
+console.log(ownProps);
