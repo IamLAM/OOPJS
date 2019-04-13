@@ -55,6 +55,11 @@ let terrier = new Animal("Firulais", "Dark Brown");
 Animal.prototype.size = 10;
 console.log(terrier instanceof Animal);
 
+//another way to check the object's type is constructor
+console.log(terrier.constructor === Animal);
+
+
+
 //Adding properties to array
 let ownProps = [];
 
