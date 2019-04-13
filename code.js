@@ -35,3 +35,6 @@ function Dog() {
     this.color = "blue";
     this.numLegs = 4;
 }
+
+let pitbull = new Dog();
+pitbull.name = "Punisher";
