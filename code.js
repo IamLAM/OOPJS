@@ -106,11 +106,19 @@ Animals.prototype = {
         console.log("Im hungry");
     }
 };
+Dog.prototype = Object.create(Animals.prototype);
+Dog.prototype.constructor = Dog;
 
-
+Dog.prototype.bark = function() {
+    console.log("Woof woof");
+}
 
 let duck = Object.create(Animals.prototype);
 let beagle = Object.create(Animals.prototype);
 
 duck.eat();
 beagle.eat();
+
+let bulldog = new Dog();
+bulldog.bark();
+bulldog.eat();
