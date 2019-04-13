@@ -95,3 +95,22 @@ Animal.prototype = {
 
     }
 };
+
+//inheritance in prototypes for using functions
+
+function Animals() {}
+
+Animals.prototype = {
+    constructor: Animals,
+    eat: function() {
+        console.log("Im hungry");
+    }
+};
+
+
+
+let duck = Object.create(Animals.prototype);
+let beagle = Object.create(Animals.prototype);
+
+duck.eat();
+beagle.eat();
