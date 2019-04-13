@@ -124,3 +124,11 @@ bulldog.bark();
 bulldog.eat();
 
 //basic rule ChildObject.prototype = Object.create(ParentObject.prototype);
+
+//if you want to override a method, you need to do this:
+
+Dog.prototype.eat = function() { //dog overrides animals
+    console.log("Well I m not hungry");
+}
+
+bulldog.eat();
