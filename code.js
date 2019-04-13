@@ -122,3 +122,5 @@ beagle.eat();
 let bulldog = new Dog();
 bulldog.bark();
 bulldog.eat();
+
+//basic rule ChildObject.prototype = Object.create(ParentObject.prototype);
