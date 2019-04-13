@@ -47,3 +47,4 @@ function Animal(name, color) {
 }
 
 let terrier = new Animal("Firulais", "Dark Brown");
+console.log(terrier instanceof Animal);
