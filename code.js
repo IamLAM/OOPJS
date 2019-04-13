@@ -132,3 +132,6 @@ Dog.prototype.eat = function() { //dog overrides animals
 }
 
 bulldog.eat();
+let chihua = new Dog();
+console.log("----");
+chihua.eat();
