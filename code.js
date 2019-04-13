@@ -51,11 +51,21 @@ function Animal(name, color) {
 
 
 let terrier = new Animal("Firulais", "Dark Brown");
+//verifying prototype of object
 
+console.log(Animal.prototype.isPrototypeOf(terrier));
 Animal.prototype.size = 10;
-console.log(terrier instanceof Animal);
+
+//understanding chain prototype  Object is like a super class in JS for example
+
+console.log(Object.prototype.isPrototypeOf(Animal.prototype));
+
+
 
 //another way to check the object's type is constructor
+
+console.log(terrier instanceof Animal);
+
 console.log(terrier.constructor === Animal);
 
 
