@@ -46,7 +46,13 @@ function Animal(name, color) {
     this.numLegs = 4;
 }
 
+//using prototype
+
+
+
 let terrier = new Animal("Firulais", "Dark Brown");
+
+Animal.prototype.size = 10;
 console.log(terrier instanceof Animal);
 
 //Adding properties to array
