@@ -74,7 +74,7 @@ console.log(ownProps);
 
 //working with prototype inside an object
 Animal.prototype = {
-
+    constructor: Animal,
     numLegs: 4,
     eat: function() {
 
