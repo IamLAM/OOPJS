@@ -38,3 +38,12 @@ function Dog() {
 
 let pitbull = new Dog();
 pitbull.name = "Punisher";
+
+//another type is creating a dynamic constructor
+function Animal(name, color) {
+    this.name = name;
+    this.color = color;
+    this.numLegs = 4;
+}
+
+let terrier = new Animal("Firulais", "Dark Brown");
