@@ -135,3 +135,18 @@ bulldog.eat();
 let chihua = new Dog();
 console.log("----");
 chihua.eat();
+
+//mixing function in unrelated objects
+
+let mixfunctionsO = function(obj) {
+
+    obj.run = function() {
+        console.log("run fast!!!");
+    }
+
+}
+
+mixfunctionsO(bulldog);
+mixfunctionsO(duck);
+duck.run();
+bulldog.run();
