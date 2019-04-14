@@ -163,3 +163,16 @@ function Bird() {
 
 let d = new Bird();
 console.log(d.getWeight());
+
+
+///Inmediately Invoked Function Expression
+
+/*function makeNest() {
+    console.log("almost ready");
+  }
+  
+  makeNest(); 
+  */
+(function() {
+    console.log("it is ready");
+})();
