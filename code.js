@@ -150,3 +150,16 @@ mixfunctionsO(bulldog);
 mixfunctionsO(duck);
 duck.run();
 bulldog.run();
+
+//private variable and access with method
+function Bird() {
+    let weight = 15; //private
+
+    this.getWeight = function() {
+
+        return weight;
+    };
+}
+
+let d = new Bird();
+console.log(d.getWeight());
